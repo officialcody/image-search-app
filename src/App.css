@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.snip1256 {
+    font-family        : 'Raleway', Arial, sans-serif;
+    color              : #fff;
+    position           : relative;
+    overflow           : hidden;
+    width              : 100%;
+    color              : #ffffff;
+    text-align         : left;
+    background-color   : #07090c;
+    font-size          : 16px;
+    -webkit-perspective: 50em;
+    perspective        : 50em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.snip1256 * {
+    -webkit-box-sizing: border-box;
+    box-sizing        : border-box;
+    -webkit-transition: all 0.6s ease;
+    transition        : all 0.6s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.snip1256 img {
+    opacity                 : 1;
+    width                   : 100%;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin    : 50% 100%;
+    transform-origin        : 50% 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.snip1256 .figcaption {
+    position                : absolute;
+    bottom                  : 0;
+    left                    : 0;
+    width                   : 100%;
+    -webkit-transform       : rotateX(90deg);
+    transform               : rotateX(90deg);
+    -webkit-transform-origin: 50% -50%;
+    -ms-transform-origin    : 50% -50%;
+    transform-origin        : 50% 50%;
+    z-index                 : 1;
+    opacity                 : 0;
+    padding                 : 20px 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.snip1256 .h3,
+.snip1256 .p {
+    line-height: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.snip1256 .h3 {
+    margin        : 0;
+    font-weight   : 800;
+    text-transform: uppercase;
+}
+
+.snip1256 .p {
+    font-size  : 0.8em;
+    font-weight: 500;
+    margin     : 0 0 15px;
+}
+
+.snip1256 .read-more {
+    border         : 2px solid #ffffff;
+    padding        : 0.5em 1em;
+    font-size      : 0.8em;
+    text-decoration: none;
+    color          : #ffffff;
+    display        : inline-block;
+}
+
+.snip1256 .read-more:hover {
+    background-color: #ffffff;
+    color           : #000000;
+}
+
+.snip1256:hover img,
+.snip1256.hover img {
+    opacity: 0.6;
+}
+
+.snip1256:hover .figcaption,
+.snip1256.hover .figcaption {
+    -webkit-transform       : rotateX(0deg);
+    transform               : rotateX(0deg);
+    opacity                 : 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay        : 0.2s;
+}
+
+.grow {
+    transition: height 1s ease-in;
+}
+
+.searchbar {
+    width          : 20% !important;
+    margin         : 10px !important;
+    text-decoration: none !important;
+}
+
+.select {
+    margin         : 10px;
+    width          : 70px !important;
+    border         : 1 solid gray !important;
+    text-decoration: none !important;
 }
